@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./src/img2/logo_nombre.png" alt="cart-icon">
+            <figure class="cart__btn">
+                <img src="./src/img/shopping-cart-symbol-png-1.png" alt="cart-icon">
+                <span>0</span>
+            </figure>
+        </div>
+        <nav class="header__nav">
+            <div class="logoBlanco">
+                <img src="./src/img2/logo blanco.png" alt="logo-blanco">
+            </div>
+            <button class="header__btn">
+                <box-icon name='menu'></box-icon>
+            </button>
+            <div class="cart__modal">
+                <div class="cart__products"></div>
+                <div class="cart__totals">
+                    <div>
+                        <p><span>Cantidad:</span> 0</p>
+                        <p><span>Total:</span> $0</p>
+                    </div>
+                    <button class="btn__buy">Comprar</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="todo__productos">
+            <h2>Todos nuestros productos</h2>
+            <select id="categorySelect" class="header__list">
+                <option value="todos">Todos</option>
+                <option value="shirt">Camisetas</option>
+                <option value="hoddie">Hoddies</option>
+                <option value="sweater">Sweaters</option>
+            </select>
+        </div>
+
+    </header>
+    <main>
+        <section class="products">
+
+
+        </section>
+        <section class="view__modal">
+            <article class="content__modal"></article>
+            <span class="close__modal">X</span>
+        </section>
+    </main>
+    <footer>
+        <!--  -->
+    </footer>
+    <!-- <script src="./main.js"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
